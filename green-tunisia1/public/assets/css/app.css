@@ -1,0 +1,59 @@
+.card > .card-body {
+    padding: 0;
+}
+
+.card > .table-responsive {
+    margin: -1.75rem;
+}
+
+.card > .table-responsive > .table {
+    margin-bottom: 0;
+}
+
+.table > thead > tr > th {
+    background-color: #f8faf9;
+    color: var(--text-muted-green);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--brand-forest-medium);
+    box-shadow: 0 0 0 0.2rem var(--brand-lime-translucent);
+}
+
+.btn-success,
+.btn-primary {
+    background-color: var(--brand-forest-medium);
+    border-color: var(--brand-forest-medium);
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--brand-forest-dark);
+    border-color: var(--brand-forest-dark);
+}
+
+.btn-outline-success,
+.btn-outline-primary {
+    color: var(--brand-forest-medium);
+    border-color: var(--brand-forest-medium);
+}
+
+.btn-outline-success:hover,
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: var(--brand-forest-medium);
+    border-color: var(--brand-forest-medium);
+}
+
+.alert {
+    border: 0;
+    border-radius: var(--radius-lg);
+}
