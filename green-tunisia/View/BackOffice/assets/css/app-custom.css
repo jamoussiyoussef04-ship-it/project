@@ -1,0 +1,200 @@
+/*
+ * Styles additifs Green Tunisia - Module Campagnes & Participations (Étudiant 2)
+ * Réutilise intégralement les variables et composants de spark-admin-v1.0.0/assets/css/main.css
+ * sans modifier le template initial.
+ */
+
+/* Validation visuelle pour select custom (complète .form-control-custom dans main.css) */
+.form-select-custom.is-invalid-custom {
+    border-color: var(--sys-red) !important;
+}
+
+.form-select-custom.is-invalid-custom:focus {
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.08) !important;
+}
+
+.form-select-custom.is-valid-custom {
+    border-color: var(--sys-green) !important;
+}
+
+.form-select-custom.is-valid-custom:focus {
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.08) !important;
+}
+
+/* Badges de type de campagne alignés sur la palette Spark Admin */
+.badge-type-campagne {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.7rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 50rem;
+}
+
+.badge-type-nettoyage {
+    background-color: rgba(7, 47, 31, 0.09);
+    color: var(--brand-forest-medium);
+}
+
+.badge-type-plantation {
+    background-color: rgba(34, 197, 94, 0.14);
+    color: #15803d;
+}
+
+.badge-type-sensibilisation {
+    background-color: rgba(180, 241, 5, 0.28);
+    color: var(--brand-forest-dark);
+}
+
+/* Front Office - Layout public fidèle au design system Spark Admin */
+.front-body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bs-body-bg);
+}
+
+.front-navbar {
+    background-color: var(--brand-forest-dark);
+    border-bottom: 1px solid var(--border-dark-green);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.front-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.front-brand:hover {
+    color: #FFFFFF;
+}
+
+.front-brand i {
+    color: var(--brand-lime);
+    font-size: 1.45rem;
+}
+
+.front-nav-link {
+    color: var(--text-sidebar-muted);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: var(--radius-md);
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.front-nav-link:hover,
+.front-nav-link.active {
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.front-nav-link.active i {
+    color: var(--brand-lime);
+}
+
+.front-hero {
+    background-color: var(--brand-forest-medium);
+    color: #FFFFFF;
+    border-radius: var(--radius-xxl);
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.front-hero-title {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+.front-hero-subtitle {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.975rem;
+    max-width: 680px;
+}
+
+.front-hero-shape {
+    position: absolute;
+    right: -30px;
+    bottom: -35px;
+    width: 210px;
+    height: 210px;
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+.campagne-card {
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.campagne-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.campagne-meta-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--text-muted-green);
+}
+
+.campagne-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+}
+
+.campagne-meta-item i {
+    color: var(--brand-forest-medium);
+    font-size: 0.95rem;
+    flex-shrink: 0;
+}
+
+.front-main {
+    flex: 1 0 auto;
+    padding: 2rem 0 3rem 0;
+}
+
+.front-footer {
+    background-color: #FFFFFF;
+    border-top: 1px solid var(--border-light);
+    padding: 1.5rem 0;
+    margin-top: auto;
+}
+
+.w-progress-bar {
+    width: 0%;
+}
+
+.table-cell-wrap {
+    white-space: normal !important;
+    min-width: 190px;
+}
+
+.stat-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-lg);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
