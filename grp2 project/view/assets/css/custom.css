@@ -1,0 +1,21 @@
+/* Green Tunisia - small additions on top of Spark Admin (main.css) */
+.form-stack { display: flex; flex-direction: column; gap: .35rem; max-width: 560px; }
+.form-stack .form-label-custom { margin-top: .6rem; }
+.form-stack .actions { margin-top: 1.25rem; display: flex; gap: .75rem; align-items: center; }
+.alert-custom { margin-bottom: 1.25rem; }
+.alert-custom ul { margin: 0; padding-left: 1.2rem; }
+.table-custom td, .table-custom th { white-space: nowrap; }
+.table-custom td.wrap { white-space: normal; }
+.front-nav { background: var(--brand-forest-dark); padding: .9rem 0; }
+.front-nav .brand { color: #fff; font-weight: 700; font-size: 1.2rem; text-decoration: none; display: flex; align-items: center; gap: .6rem; }
+.front-nav .brand i { color: var(--brand-lime); }
+.front-nav .nav-link-front { color: var(--text-sidebar-muted); text-decoration: none; font-weight: 600; padding: .4rem .9rem; border-radius: 50rem; }
+.front-nav .nav-link-front:hover, .front-nav .nav-link-front.active { color: var(--brand-forest-dark); background: var(--brand-lime); }
+.hero { background: var(--brand-forest-medium); color: #fff; border-radius: var(--radius-xxl); padding: 2.5rem; margin: 2rem 0; }
+.hero h1 { color: #fff; font-size: 2rem; }
+.hero p { color: var(--text-sidebar-muted); margin-bottom: 0; }
+.hero .accent { color: var(--brand-lime); }
+.partner-card h3 { font-size: 1.15rem; color: var(--brand-forest-dark); }
+.partner-card .conv { margin-top: 1rem; padding-top: 1rem; border-top: 1px dashed var(--border-light); font-size: .85rem; color: var(--text-muted-green); }
+.partner-card .conv ul { padding-left: 1.1rem; margin: .4rem 0 0; }
+.form-stack.wide { max-width: none; }
